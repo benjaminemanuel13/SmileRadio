@@ -1,0 +1,46 @@
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+<div class="audio-player">
+    <h3>Smile Radio Player</h3>
+    <div class="controls">
+        <button class="btn btn-primary" @onclick="Start">Connect & Play</button>
+        <button class="btn btn-secondary" @onclick="Stop">Stop</button>
+    </div>
+    
+    <div class="form-group mt-3">
+        <label>Server URL:</label>
+        <input @bind="ServerUrl" class="form-control" />
+    </div>
+
+    @if (IsPlaying)
+    {
+        <p class="text-success mt-2">Status: Playing...</p>
+    }
+    else
+    {
+        <p class="text-muted mt-2">Status: Stopped</p>
+    }
+</div>
+
+@code {
+    private string ServerUrl { get; set; } = "ws://localhost:5555";
+    private bool IsPlaying { get; set; }
+
+    private async Task Start()
+    {
+        await JS.InvokeVoidAsync("smileRadio.start", ServerUrl);
+        IsPlaying = true;
+    }
+
+    private async Task Stop()
+    {
+        await JS.InvokeVoidAsync("smileRadio.stop");
+        IsPlaying = false;
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await Stop();
+    }
+}

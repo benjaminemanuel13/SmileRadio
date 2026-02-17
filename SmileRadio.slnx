@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SmileRadio.Client/SmileRadio.Client.csproj" />
+  <Project Path="SmileRadio.Server/SmileRadio.Server.csproj" />
+</Solution>

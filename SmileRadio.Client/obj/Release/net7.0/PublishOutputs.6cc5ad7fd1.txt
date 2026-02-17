@@ -1,0 +1,7 @@
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\SmileRadio.Client.exe
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\SmileRadio.Client.dll
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\SmileRadio.Client.deps.json
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\SmileRadio.Client.runtimeconfig.json
+C:\Users\benja\source\Anti\SmileRadio\SmileRadio.Client\obj\Release\net7.0\PubTmp\Out\SmileRadio.Client.pdb
